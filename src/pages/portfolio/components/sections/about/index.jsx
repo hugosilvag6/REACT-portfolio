@@ -58,7 +58,7 @@ export const AboutSection = () => {
                                     ))
                                 }
                                 {!verMais &&
-                                    [...CursosData].reverse().slice(0,7).map((item, index) => (
+                                    [...CursosData].reverse().slice(0,6).map((item, index) => (
                                         <tr key={index}>
                                             <td>{item.inst}</td>
                                             <td>{item.name}</td>

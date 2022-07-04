@@ -11,6 +11,7 @@ export const Header = styled.header`
     justify-content: center;
     align-items: center;
     height: 10vh;
+    background-color: var(--black);
 `;
 export const HeaderContainer = styled.div`
     display: flex;
