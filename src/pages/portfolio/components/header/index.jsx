@@ -6,12 +6,12 @@ export const Header = () => {
         <C.Header>
             <C.HeaderContainer>
                 <C.LogoNav>
-                    <h1>Hugo</h1>
+                    {/* <h1>Portfolio</h1> */}
                     <nav>
                         <a href="#">Home</a>
                         <a href="#about">About</a>
-                        <a href="#">Projects</a>
-                        <a href="#">Contact</a>
+                        <a href="#projetos">Projects</a>
+                        {/* <a href="#">Contact</a> */}
                     </nav>
                 </C.LogoNav>
                 <SocialBox />

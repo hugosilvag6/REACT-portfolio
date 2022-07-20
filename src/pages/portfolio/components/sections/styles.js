@@ -5,10 +5,12 @@ export const SectionContainer = styled.div`
     min-height: 100vh;
     display: flex;
     align-items: center;
+    position: relative;
 `;
 export const SectionContent = styled.div`
     width: var(--safeArea);
     margin: 0 auto;
+    position: relative;
 `;
 export const SectionTitle = styled.h1`
     color: var(--silver);

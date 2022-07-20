@@ -4,6 +4,16 @@ export const AboutContainer = styled.div`
     display: flex;
     justify-content: space-between;
     height: 60vh;
+    /* &:after {
+        content: '';
+        position: absolute;
+        width: 150vw;
+        height: 100%;
+        z-index: 2;
+        background-color: var(--black);
+        transform: rotate(4deg);
+        top: 0;
+    } */
 `;
 export const AboutLeftBox = styled.div`
     width: 50%;

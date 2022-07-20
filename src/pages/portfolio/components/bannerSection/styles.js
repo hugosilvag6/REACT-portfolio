@@ -6,12 +6,20 @@ export const BannerSection = styled.div`
     justify-content: center;
     height: 100vh;
     background-image: url(${Banner});
-    background-position: 450px 15px;
+    background-position: 0px;
     background-color: black;
     background-repeat: no-repeat;
-    background-size: 80vw;
+    background-size: 100vw;
     img {
         width: 100vw;
+    }
+    &:after {
+        content: " ";
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 2;
     }
 `;
 export const BannerText = styled.div`
@@ -19,6 +27,7 @@ export const BannerText = styled.div`
     top: 50%;
     transform: translateY(-50%);
     width: var(--safeArea);
+    z-index: 3;
     h1 {
         color: var(--silver);
         text-transform: uppercase;

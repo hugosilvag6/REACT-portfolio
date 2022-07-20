@@ -30,3 +30,28 @@ export const ProjetosBox = styled.ul`
         }
     }
 `;
+
+export const ProjetosControl = styled.div`
+    color: var(--silver);
+    font-weight: 700;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid var(--silver);
+    cursor: pointer;
+    transition: 300ms;
+    &:hover {
+        transform: scale(1.1);
+    }
+`;
+
+export const ProjetosControllableBox = styled.div`
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+`;

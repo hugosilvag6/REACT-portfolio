@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-    position: fixed;
+    /* position: fixed;
     left: 0px;
-    top: 0px;
+    top: 0px; */
+    position: absolute;
     z-index: 100;
     width: 100%;
     border-bottom: 1px solid silver;
@@ -11,7 +12,6 @@ export const Header = styled.header`
     justify-content: center;
     align-items: center;
     height: 10vh;
-    background-color: var(--black);
 `;
 export const HeaderContainer = styled.div`
     display: flex;

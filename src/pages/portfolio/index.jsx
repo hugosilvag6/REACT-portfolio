@@ -1,4 +1,5 @@
 import { Header } from "./components/header"
+import { Footer } from "./components/footer"
 import { BannerSection } from "./components/bannerSection"
 import { AboutSection } from "./components/sections/about"
 import GlobalStyle from "./globalStyle"
@@ -12,6 +13,7 @@ export const Portfolio = () => {
             <BannerSection />
             <AboutSection/>
             <ProjectsSection />
+            <Footer />
         </>
     )
 }
