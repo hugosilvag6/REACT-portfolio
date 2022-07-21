@@ -9,6 +9,9 @@ export const AccContent = styled.div`
     transition: all ease-in-out 500ms;
     box-sizing: border-box;
     overflow: hidden;
+    @media(max-width: 900px) {
+        width: var(--safeAreaResponsive)
+    }
 `
 export const AccButton = styled.button`
     font-size: 20px;
@@ -27,6 +30,9 @@ export const AccButton = styled.button`
         content: ${(props) => props.open ? "'\\2212'" : "'\\002B'"};
         color: ${(props) => props.open ? 'var(--red)' : 'var(--silver)'};
         font-size: 25px;
+    }
+    @media(max-width: 900px) {
+        width: var(--safeAreaResponsive);
     }
 `;
 

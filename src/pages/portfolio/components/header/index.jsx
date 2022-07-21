@@ -14,7 +14,9 @@ export const Header = () => {
                         {/* <a href="#">Contact</a> */}
                     </nav>
                 </C.LogoNav>
-                <SocialBox />
+                {(window.innerWidth>800) &&
+                    <SocialBox />
+                }
             </C.HeaderContainer>
         </C.Header>
     )

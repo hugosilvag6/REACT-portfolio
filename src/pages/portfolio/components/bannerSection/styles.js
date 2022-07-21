@@ -6,10 +6,10 @@ export const BannerSection = styled.div`
     justify-content: center;
     height: 100vh;
     background-image: url(${Banner});
-    background-position: 0px;
+    background-position: center;
     background-color: black;
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
     img {
         width: 100vw;
     }

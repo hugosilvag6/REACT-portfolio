@@ -3,22 +3,19 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    height: 60vh;
-    /* &:after {
-        content: '';
-        position: absolute;
-        width: 150vw;
-        height: 100%;
-        z-index: 2;
-        background-color: var(--black);
-        transform: rotate(4deg);
-        top: 0;
-    } */
+    min-height: 60vh;
+    @media(max-width: 900px) {
+        flex-direction: column;
+        height: auto;
+    }
 `;
 export const AboutLeftBox = styled.div`
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
+    @media(max-width: 900px) {
+        width: 100%;
+    }
 `;
 export const AboutUpperBox = styled.div`
     color: var(--silver);
@@ -26,12 +23,14 @@ export const AboutUpperBox = styled.div`
     flex-direction: column;
     gap: 10px;
     font-size: 18px;
+    text-align: justify;
 `;
 export const AboutLowerBox = styled.div`
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
     h2 {
         color: var(--silver);
         text-transform: uppercase;
@@ -39,15 +38,15 @@ export const AboutLowerBox = styled.div`
     }
 `;
 export const TecBox = styled.ul`
-    border: 1px solid var(--red);
     border-radius: 10px;
     color: var(--silver);
     display: flex;
     gap: 10px;
-    background-color: rgba(255,255,255,0.1);
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
     li {
         display: flex;
         flex-direction: column;
@@ -59,7 +58,7 @@ export const TecBox = styled.ul`
         gap: 5px;
         transition: 300ms;
         padding: 5px;
-        width: 14%;
+        width: 20%;
         &:hover {
             transform: scale(1.1);
             border: 1px solid var(--red);
@@ -73,41 +72,48 @@ export const TecBox = styled.ul`
     }
 `;
 export const AboutRightBox = styled.div`
-    width: 49%;
+    width: 58%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: 60vh;
     h2 {
         color: var(--silver);
         text-transform: uppercase;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    @media(max-width: 900px) {
+        width: 100%;
     }
 `;
 export const TableBox = styled.div`
     height: 70%;
     width: 100%;
     overflow: auto;
-    box-sizing: border-box;
+    @media(max-width: 900px) {
+        max-height: 60vh;
+    }
 `;
 export const CursosTable = styled.table`
     width: 100%;
     color: var(--silver);
     text-align: center;
     font-size: 13px;
+    table-layout: fixed;
     thead {
         th {
             border: 1px solid var(--red);
-            padding: 10px;
+            padding: 10px 5px;
             text-transform: uppercase;
             color: var(--red);
             font-weight: 700;
             &:nth-child(1){
-                width: 20%;
+                width: 29%;
             }
             &:nth-child(2){
                 border-left: none;
                 border-right: none;
-                width: 60%;
+                width: 48%;
             }
             &:nth-child(3){
                 width: 20%;
@@ -118,7 +124,7 @@ export const CursosTable = styled.table`
         tr {
             td {
                 box-sizing: border-box;
-                padding: 10px;
+                padding: 10px 5px;
                 border: 1px solid var(--silver);
                 border-top: none;
                 a {
@@ -127,20 +133,15 @@ export const CursosTable = styled.table`
                         font-weight: 700;
                     }
                 }
-                &:nth-child(1) {
-                    width: 20%;
-                }
                 &:nth-child(2) {
                     border-left: none;
                     border-right: none;
-                    width: 60%;
-                }
-                &:nth-child(3) {
-                    white-space: nowrap;
-                    width: 20%;
                 }
             }
         }
+    }
+    @media(max-width: 900px) {
+        font-size: 12px;
     }
 `;
 export const CursosVerMais = styled.div`

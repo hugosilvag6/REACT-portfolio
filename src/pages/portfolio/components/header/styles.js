@@ -18,6 +18,9 @@ export const HeaderContainer = styled.div`
     justify-content: space-between;
     width: var(--safeArea);
     align-items: center;
+    @media(max-width: 900px) {
+        justify-content: center;
+    }
 `;
 export const LogoNav = styled.div`
     display: flex;

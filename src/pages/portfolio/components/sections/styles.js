@@ -11,6 +11,9 @@ export const SectionContent = styled.div`
     width: var(--safeArea);
     margin: 0 auto;
     position: relative;
+    @media(max-width: 900px) {
+        width: var(--safeAreaResponsive);
+    }
 `;
 export const SectionTitle = styled.h1`
     color: var(--silver);
